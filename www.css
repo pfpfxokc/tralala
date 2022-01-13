@@ -4,9 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body *{
   box-sizing: border-box;
 }
 
@@ -15,23 +12,33 @@ body *{
   margin: 0 auto;
 }
 
-.header .button{
+.button{
+  font-family: 'Nunito Sans', Helvetica, Arial sans-serif;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.title{
+  font-family: "Yeseva One", Helvetica, Arial sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header{
+ background: rgba(19, 19, 19, 1);
+}
+
+.button-header{
   box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0,2);
   background: rgba(227, 184, 115, 1);
   outline: 0;
   border: 0;
   padding: 13px 33px;
-  border-radius: 2px;
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
   font-style: italic;
-  font-family: 'Nunito Sans', Helvetica, Arial sans-serif; 
 }
 
-
-.header{
- background: rgba(19, 19, 19, 1);
-}
 
 .header-con{
  font-family: 'Nunito Sans', Helvetica, Arial sans-serif; 
@@ -69,12 +76,8 @@ body *{
 }
 
  .one .title{
-  font-family: "Yeseva One", Helvetica, Arial sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 40px;
   line-height: 53px;
-  text-transform: uppercase;
   color: #FFFFFF;
   height: 105px;
   width: 676px;
@@ -110,14 +113,6 @@ body *{
   margin-top: 19px;
 }
 
-.button1 {
-  font-family: 'Nunito Sans', Helvetica, Arial sans-serif;
-  text-transform: uppercase;
-  font-style: 400px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  margin-top: 41px;
-}
 
 .buttonone{
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
@@ -127,6 +122,8 @@ body *{
   color: rgba(255, 255, 255, 1);
   padding: 19px 41px;
   margin-right: 20px;
+  font-style: 400px;
+  margin-top: 41px;
 }
 
 .buttontwo{
@@ -134,68 +131,116 @@ body *{
   border: 1px solid #FFFFFF;
   color: rgba(255, 255, 255, 1);
   padding: 19.09px 23px 20.57px 22px;
+  font-style: 400px;
+  margin-top: 41px;
 }
 
-.two{
+.projects{
   background: rgba(19, 19, 19, 1);
   height: 1074px;
-  margin: 0;
+  
 }
-
-.two .title{
-  font-family: "Yeseva One", Helvetica, Arial sans-serif;
+ 
+.title2{
   color: rgba(227, 184, 115, 1);
   font-style: normal;
-  font-weight: normal;
   font-size: 27px;
   line-height: 37px;
-  text-transform: uppercase;
-  height: 66px;
+  padding-top: 176px;
   width: 253px;
-  position: relative;
-  top: 176.36px;
+ /* height: 66px;
+  width: 253px; */
 }
 
-.two .qaz{
+.qaz{
   color: rgba(255, 255, 255, 1);
   font-family: 'Nunito Sans', Helvetica, Arial sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 27px;
+  margin-top: 34px;
+  margin-bottom: 42px;
   width: 442px;
-  height: 86px;
-  position: relative;
-  top: 210.36px; 
+  }
+
+.wsx{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 80px 80px;
+}
+
+.wsx div{
+  position:relative;
 }
 
 .wsx h2{
   font-family: "Yeseva One", Helvetica, Arial sans-serif;
   color: rgba(227, 184, 115, 1);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-}
-
-.wsx div{
-  position: relative;
-  top: 252.36px;
+  
 }
 
 .wsx p{
   font-family: 'Nunito Sans', Helvetica, Arial sans-serif;
   color: rgba(255, 255, 255, 1);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 13px;
   line-height: 21px;
   margin-top: 9px;
+  margin-bottom: 34px;
   height: 42px;
   width: 161px;
 }
 
+.pen{
+  list-style: none;
+  display: flex;
+}
+ 
+.pen-item{
+  margin-right: 60.5px;
+}
+
+.pen-item a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0,3);
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+
+
+/*
+
+.pen{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: auto;  
+}
+
+.pen_item a{
+  color: rgba(255, 255, 255, 0,3);
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
+/*
 .two .wsx{
   display: grid;
   grid-template-columns: 200px 200px;
@@ -209,4 +254,5 @@ body *{
 .pen_item a{
   color: rgba(255, 255, 255, 0,3);
   list-style: none;
-}
+} */
+
